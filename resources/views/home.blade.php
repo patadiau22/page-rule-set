@@ -51,7 +51,7 @@
                                 </select>
                             </td>
                             <td>www.domain.com/</td>
-                            <td><input type="text" name="addmore[0][rule_text]" placeholder="Enter text/javascript" class="form-control" required /></td>  
+                            <td><input type="text" name="addmore[0][rule_text]" placeholder="Enter url path" class="form-control" required /></td>  
                             <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
                         </tr>  
                     </table> 
@@ -84,7 +84,7 @@
     $("#add").click(function(){
         ++i;
         $("#dynamicTable").append(
-            '<tr><td><select name="addmore['+i+'][show_on]" class="form-control" required>'+showOnTemplate+'</select></td><td><select name="addmore['+i+'][rule]" class="form-control" required>'+ruleTemplate+'</select></td><td>www.example.com/</td><td><input type="text" name="addmore['+i+'][rule_text]" placeholder="Enter text/javascript" class="form-control" required/></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>'
+            '<tr><td><select name="addmore['+i+'][show_on]" class="form-control" required>'+showOnTemplate+'</select></td><td><select name="addmore['+i+'][rule]" class="form-control" required>'+ruleTemplate+'</select></td><td>www.example.com/</td><td><input type="text" name="addmore['+i+'][rule_text]" placeholder="Enter url path" class="form-control" required/></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>'
         );
     });
    
