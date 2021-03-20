@@ -31,7 +31,7 @@ class PageRuleController extends Controller
             foreach ($request->addmore as $key => $value) {
                 PageRule::create($value);
             }
-            return view('copy_snippet',['codeSnippet'=>$codeSnippet])->with('success', 'Code Snippet Generated Successfully.');
+            return view('copy_snippet',['codeSnippet'=>$codeSnippet]);
         } else {
             return back()->with('error', 'Something went wrong. Please try after sometime !!!');
         }
