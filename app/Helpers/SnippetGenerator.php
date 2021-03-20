@@ -25,8 +25,6 @@ class SnippetGenerator
     public static function generateJs($data){
         $jsString = "(function(){";
         $jsString .= "var url_path = window.location.pathname.substring(1);";
-        $andConditionShow = '';
-        $andConditionNotShow = '';
         $orConditionShow = '';
         $orConditionNotShow = '';
         foreach($data as $key => $val){
