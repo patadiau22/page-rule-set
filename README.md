@@ -7,4 +7,5 @@
 - cp .env.example to .env
 - php artisan migrate --seed 
 - php artisan storage:link
+- php artisan key:generate
 - php artisan serve
